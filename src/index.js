@@ -1,16 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import HamburgerContextProvider from "./context/HamburgerContext";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import HamburgerContextProvider from './context/HamburgerContext';
 
 ReactDOM.render(
   <React.StrictMode>
-      {/* Uygulamayı context provider ile sarmalayınız */}
+    {/* Uygulamayı context provider ile sarmalayınız */}
+    <HamburgerContextProvider>
       <App />
+    </HamburgerContextProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

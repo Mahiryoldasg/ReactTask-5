@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useState } from 'react';
 
 export const HamburgerContext = createContext();
 
@@ -18,7 +18,7 @@ const Hamburger = ({ children }) => {
       value={{
         selectedIngredients,
         getCalculatedTotalPrice,
-        /* Component'lere gönderilmesi istenilen state değeri */
+        setSelectedIngredients,
       }}
     >
       {children}
